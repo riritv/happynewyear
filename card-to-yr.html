@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>와아~~</title>
+
+    <link
+      rel="shortcut icon"
+      href="https://www.pinclipart.com/picdir/big/47-478843_new-year-horn-png-konfetti-icon-clipart.png"
+    />
+
+    <meta
+      property="og:image"
+      content="https://cdn.crowdpic.net/list-thumb/thumb_l_7F10556942BA6BC66C926CA8E42C80BF.png"
+    />
+    <meta property="og:title" content="복 듬뿍 카드" />
+    <meta property="og:description" content="2020년 수고 많으셨어요^^" />
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gugi&family=Poor+Story&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: 'Gugi', cursive;
+        font-family: 'Poor Story', cursive;
+      }
+      body {
+        background-color: #9b070f;
+      }
+      .envelope {
+        width: 200px;
+        height: 200px;
+
+        background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+        background-size: cover;
+        background-position: center;
+
+        margin: 200px auto 0 auto;
+
+        cursor: pointer;
+      }
+      .envelope-msg {
+        text-align: center;
+        color: white;
+      }
+      .letter-close {
+        display: block;
+      }
+      .letter-open {
+        display: none;
+      }
+      .rtan {
+        background-color: white;
+        width: 200px;
+        height: 200px;
+        background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/rtan.gif');
+        background-size: cover;
+        background-position: center;
+
+        margin: 100px auto 0px auto;
+        border-radius: 100px;
+        border: 5px solid white;
+        box-shadow: 0px 0px 10px 1px white;
+      }
+      h1 {
+        color: white;
+        text-align: center;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .messagebox {
+        background-color: ivory;
+        width: 350px;
+        margin: auto;
+        color: brown;
+        padding: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        box-shadow: 0px 0px 10px 1px white;
+        border-radius: 30px;
+      }
+      .from {
+        text-align: right;
+        margin-bottom: 0px;
+      }
+
+      @media screen and (max-width: 760px) {
+        .messagebox {
+          width: 300px;
+          padding: 20px;
+        }
+        .rtan {
+          width: 150px;
+          height: 150px;
+          margin: 70px auto 0px auto;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        .envelope {
+          margin: 150px auto 0 auto;
+        }
+      }
+    </style>
+
+    <script>
+      function open_letter() {
+        document.getElementsByClassName('letter-close')[0].style.display =
+          'none';
+        document.getElementsByClassName('letter-open')[0].style.display =
+          'block';
+      }
+
+      function go_rtan() {
+        alert('앗^^ 어떻게 찾았지?! \n 새해 복 듬뿍~ 드려요! ');
+      }
+    </script>
+  </head>
+  <body>
+    <div class="letter-close">
+      <div class="envelope" onclick="open_letter()"></div>
+      <h2 class="envelope-msg">봉투를 열어보세요~!</h2>
+    </div>
+
+    <div class="letter-open">
+      <div class="rtan" onclick="go_rtan()"></div>
+      <h1>2020년 수고 많았어요~😄</h1>
+      <div class="messagebox">
+        와~~예리야!🌼 이제 곧 새해가 오고있어!<br />
+        🔆내년에도 건강하고<br />
+        좋은일 가득하길~🤗<br />
+        ⭐예리그라피 화이팅~! 아자잣~!!🙆‍♂️🤸‍♀️✌<br />
+        그리고 여기 어딘가에 ✨복이 숨어있어!<br />
+        찾으면 복이 100배로 온다고하네~ㅎㅎ<br /><br />
+        <span style="font-size: 15px">
+          ps.이 카드는 24시간 후에 사라집니다요😜
+        </span>
+        <p class="from">
+          2020.12.27<br />
+          리리
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
